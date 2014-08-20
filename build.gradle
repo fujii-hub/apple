@@ -51,3 +51,5 @@ task initProject(dependsOn: 'idea') {
     new File('src/test/resources').mkdirs()
     new File('src/main/webapp').mkdirs()
 }
+
+task stage (dependsOn: ['clean', 'installApp'])
